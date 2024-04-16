@@ -5,32 +5,18 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
 		Scanner scanner = new Scanner(System.in);
+		int num;
+		System.out.println("Ingrese numero 1 al 9: ");
+		num = scanner.nextInt();
+		if (num>=1 && num<=9) {
+			for(int i=0;i<=10;i++)
+				System.out.println(num+"x"+i+"="+num*i);
+		}
+		else {
+			System.out.println("El numero ingresado es incorrecto");
+		}
 				
-		long factorial = 1;
-		System.out.println("Ingrese numero :");
-				
-				
-			if(scanner.hasNextInt()) {
-				int num = scanner.nextInt();
-			    if(num<0 || num >10) {
-					System.out.println("Solo calcula con numeros del 0 al 10 !");
-					}
-					else {
-						while(num!=0) {
-							factorial=factorial*num;
-							num--;
-						}
-						System.out.println("El FACTORIAL ES: "+factorial);
-						scanner.close();
-					}
-				}
-				else {
-					System.out.println("Se ingreso datos incorrectos");
-				}
-				
-				
-			}
-		
+	    }
 	}
 
 
